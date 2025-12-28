@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/KeyMetrics.css";
+import { HiCurrencyDollar, HiChartBar } from "react-icons/hi";
 
 const KeyMetrics = ({ data }) => {
   return (
     <div className="metrics-container">
       <div className="metric-card">
-        <div className="metric-icon">💰</div>
+        <HiCurrencyDollar className="metric-icon" />
         <div className="metric-content">
           <h3>Total Revenue</h3>
           <p className="metric-value">
@@ -19,7 +20,7 @@ const KeyMetrics = ({ data }) => {
       </div>
 
       <div className="metric-card">
-        <div className="metric-icon">📊</div>
+        <HiChartBar className="metric-icon" />
         <div className="metric-content">
           <h3>Active Rentals</h3>
           <p className="metric-value">{data.activeRentals.toLocaleString()}</p>

@@ -6,7 +6,8 @@
 }
 
 .metric-card {
-  background: linear-gradient(135deg, #ff7a18 0%, #ffa24c 100%);
+  /* background: linear-gradient(135deg, #ff7a18 0%, #ffa24c 100%); */
+  background: #ff7a18;
   border-radius: 12px;
   padding: 30px;
   display: flex;
