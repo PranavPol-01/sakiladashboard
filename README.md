@@ -17,6 +17,16 @@ A full-stack Single Page Application (SPA) that visualizes business metrics from
 - 👥 **Top 10 Customers**: Sortable data table
 - 📝 **Recent Transactions**: Real-time transaction feed
 
+## Screenshots
+
+Below are screenshots of the dashboard UI (three views):
+
+![Dashboard 1](frontend/sakiladash/public/dashboard1.png)
+
+![Dashboard 2](frontend/sakiladash/public/dash2.png)
+
+![Dashboard 3](frontend/sakiladash/public/dash3.png)
+
 ## Prerequisites
 
 1. **Node.js** (v14 or higher)
@@ -35,10 +45,17 @@ A full-stack Single Page Application (SPA) that visualizes business metrics from
    ```bash
    psql -U postgres
    CREATE DATABASE sakila;
-   \q
-   psql -U postgres -d sakila -f sakila-schema.sql
-   psql -U postgres -d sakila -f sakila-data.sql
+   
+   psql -U postgres sakila
+
    ```
+   
+   ```sql
+   \i sakila-schema.sql
+   \i sakila-data.sql
+
+   ```
+   
 
 3. Update database credentials in `backend/.env`:
    ```env
@@ -79,7 +96,7 @@ The frontend will start at `http://localhost:5173`
 3. Open your browser to `http://localhost:5173`
 4. Use the filter bar to:
    - Select a specific store (1 or 2) or view all stores
-   - Set date range 
+   - Set date range
 
 ## GraphQL API
 
@@ -96,7 +113,6 @@ All queries support filtering by:
 - `storeId`: Integer (1 or 2, or null for all)
 - `startDate`: String (YYYY-MM-DD format)
 - `endDate`: String (YYYY-MM-DD format)
-
 
 ## Features Implementation
 
@@ -130,6 +146,5 @@ All queries support filtering by:
 - Displays: "[Name] rented [Title] for $X.XX"
 - Includes timestamp
 - Scrollable list
-
 
 This project is for Careflux Fullstack Intern Assignment.
