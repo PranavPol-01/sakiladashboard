@@ -1,0 +1,79 @@
+.transactions-feed {
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.transactions-feed::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transactions-feed::-webkit-scrollbar-track {
+  background: #1b2030;
+  border-radius: 4px;
+}
+
+.transactions-feed::-webkit-scrollbar-thumb {
+  background: #ff7a18;
+  border-radius: 4px;
+}
+
+.transactions-feed::-webkit-scrollbar-thumb:hover {
+  background: #ffa24c;
+}
+
+.transaction-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #1b2030;
+  border-radius: 8px;
+  border-left: 4px solid #ff7a18;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.transaction-item:hover {
+  transform: translateX(5px);
+  background-color: #141821;
+}
+
+.transaction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.transaction-text {
+  margin: 0;
+  color: #ededed;
+  line-height: 1.5;
+}
+
+.transaction-text strong {
+  color: #ffa24c;
+}
+
+.transaction-text em {
+  font-style: italic;
+  color: #a1a1aa;
+}
+
+.transaction-text .amount {
+  color: #2ee6a6;
+  font-size: 1.1rem;
+}
+
+.transaction-date {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+@media (max-width: 768px) {
+  .transactions-feed {
+    max-height: 300px;
+  }
+
+  .transaction-item {
+    padding: 12px;
+  }
+}

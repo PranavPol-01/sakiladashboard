@@ -1,0 +1,12 @@
+
+.dashboard-card {
+  position: relative;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
